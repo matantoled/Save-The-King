@@ -1,6 +1,7 @@
 # Author
-- **Matan Toledano**
-* If you have any questions or encounter any issues with this project, feel free to contact me at matantoled@gmail.com. I'll be more than happy to help!
+Matan Toledano
+
+If you have any questions or encounter any issues with this project, feel free to contact me at matantoled@gmail.com. I'll be more than happy to help!
 
 # Save-The-King
 Save The King is a game in which the player must guide a king to his throne. The game features three distinct levels, each presenting unique challenges. To complete a level, navigate the king to his throne within the given time limit. Some levels feature a time constraint, while others do not. If time runs out, the level will automatically restart. Upon completing the game, players have the option to return to the main menu to play again or exit the game.
