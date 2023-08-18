@@ -5,6 +5,9 @@
 # Save-The-King
 Save The King is a game in which the player must guide a king to his throne. The game features three distinct levels, each presenting unique challenges. To complete a level, navigate the king to his throne within the given time limit. Some levels feature a time constraint, while others do not. If time runs out, the level will automatically restart. Upon completing the game, players have the option to return to the main menu to play again or exit the game.
 
+## Gameplay Video
+To see the game in action, check out the gameplay video on YouTube: [Save The King Gameplay](https://youtu.be/GdO1x8fGayo)
+
 ## Getting Started
 These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
