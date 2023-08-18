@@ -24,6 +24,40 @@ https://www.sfml-dev.org/tutorials/2.6/start-linux.php
 ## How to Play
 The game consists of several levels where the objective is to guide the king to his throne. Players can move characters using the arrow keys and switch characters with the `P` key. Some levels have a time limit, while others do not. If time runs out, the level will restart.
 
+## Gameplay Rules and Character Abilities
+
+### Characters and Their Abilities
+
+- **The King**: The objective is to lead the king to the throne. The king can walk on empty tiles, tiles with a key (but not pick it up), enter teleport cells, and reach the throne tile. Represented by `K`.
+- **The Sorcerer**: His unique ability is to extinguish fire. He can walk on empty tiles, fire tiles (extinguishing them), tiles with a key, and stand on teleport cells. Represented by `M`.
+- **The Warrior**: His unique ability is to defeat orcs. He can walk on empty tiles, orc tiles (turning them into key tiles), enter teleport cells, and tiles with a key. Represented by `W`.
+- **The Thief**: His unique ability is to pick up a key (only one at a time) and open gates. He can walk on empty tiles, tiles with a key (and pick it up), enter teleport cells, and open gates if he has a key. Represented by `T`.
+
+### Tiles and Objects
+
+- **Empty Tile**: Accessible to all characters. Represented by a space.
+- **Wall**: No character can pass through. Represented by `=`.
+- **Gate**: The thief can open the gate, turning it into an empty tile. Represented by `#`.
+- **Fire**: The sorcerer can extinguish it, turning it into an empty tile. Represented by `*`.
+- **Orc**: The warrior can defeat it, turning it into a key tile. Represented by `!`.
+- **Key**: Only the thief can pick it up, turning it into an empty tile. Represented by `F`.
+- **Teleport Cell**: Each cell has a paired cell to which characters are transported. All characters can use it, except the sorcerer who can stand on it without teleporting. Represented by `X`.
+- **Throne**: Only the king can reach this tile, ending the level. Represented by `@`.
+
+### Dwarves
+
+Dwarves are characters that randomly move around the board, blocking the player's characters. Player characters cannot pass through them.
+
+### "Gifts"
+
+"Gifts" are scattered throughout the levels. Players collect them by stepping on them with any character. Types of gifts:
+
+1. Increase the allotted time (if applicable)
+2. Decrease the allotted time (if applicable)
+3. Remove all dwarves from the current stage
+
+Dwarves can pass through gift tiles but cannot collect them.
+
 ## Creating Custom Levels
 
 You can create custom levels for the game by adding new text files to the `levels` directory. Each level should be represented by a grid of characters, where each character corresponds to a game element:
