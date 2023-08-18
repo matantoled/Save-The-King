@@ -18,9 +18,10 @@ https://www.sfml-dev.org/tutorials/2.6/start-linux.php
 
 ## Installing
 1. Clone the repository to your local machine: `git clone <repository_url>`
-2. Navigate to the project directory: `cd Save-The-King-master/Save The King`
-3. Compile the project using CMake: `cmake . && make`
-4. Run the game: `./SaveTheKing`
+2. Navigate to the project directory: `cd "Save-The-King-master/Save The King"`
+3. Create a separate build directory and navigate to it: `mkdir build && cd build`
+4. Compile the project using CMake: `cmake .. && make`
+5. Run the game: `./SaveTheKing`
 
 ## How to Play
 The game consists of several levels where the objective is to guide the king to his throne. Players can move characters using the arrow keys and switch characters with the `P` key. Some levels have a time limit, while others do not. If time runs out, the level will restart.
