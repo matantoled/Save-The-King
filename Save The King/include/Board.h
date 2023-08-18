@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <fstream>
 #include <vector>
+#include <sstream>
 #include <iostream>
 
 #include "GameObjects.h"
